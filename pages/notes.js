@@ -8,7 +8,6 @@ import path from "path"
 import { notesFilePaths, NOTES_PATH } from "../lib/mdxUtils"
 
 const Notes = ({ notes }) => {
-  console.log(notes)
   const orderedNotes = notes.sort(
     (a, b) =>
       Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
