@@ -15,7 +15,6 @@ const Header = () => {
     highlightAbout = true
     highlightWork = false
   }
-  console.log(highlightAbout)
 
   return (
     <div className="header">
@@ -31,7 +30,7 @@ const Header = () => {
         }
         @media (prefers-color-scheme: dark) {
           .header {
-            background-color: rgba(29, 39, 53, 0.9);
+            background-color: var(--primary-100-transparent);
           }
         }
         .container {
